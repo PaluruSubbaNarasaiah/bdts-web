@@ -8,5 +8,11 @@ export default defineConfig({
     host: true,
     open: true
   },
-  base: '/'
+  base: './',
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    sourcemap: false,
+    minify: 'terser'
+  }
 })
